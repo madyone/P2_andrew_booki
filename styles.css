@@ -140,19 +140,23 @@ body{
 
 .hosting{
     display: flex;
-    justify-content: center;
-    column-gap: 32px;
-    flex-wrap: auto;
+    flex-wrap: wrap;
 }
 
 .hosting-main{
-    display: grid;
-    column-gap: 32px;
-    row-gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hosting-mainheader-title{
     margin: 0px;
+}
+
+.hosting-main-card-pack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .hosting-main-card{
@@ -213,7 +217,6 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 32px;
-    align-items: start;
 }
 
 .hosting-popular-title{
@@ -255,8 +258,6 @@ body{
 }
 
 .activity{
-    display: grid;
-    column-gap: 32px;
     margin: 64px 0px;
 }
 
