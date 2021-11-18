@@ -4,15 +4,33 @@ body{
     padding: 0px 32px;
 }
 
+a{
+    text-decoration: none;
+}
+
 main{
     max-width: 1200px;
     margin: auto;
 }
 
+.head{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between
+}
+
 .header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between
+}
+
+.header-nav-link{
+    padding: 10px;
 }
 
 .header-logo{
@@ -29,6 +47,7 @@ main{
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
 }
+
 
 
 .search-bar{
@@ -164,6 +183,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    column-gap: 9px;
     row-gap: 20px;
 }
 
@@ -270,11 +290,12 @@ main{
     flex-wrap: wrap;
     column-gap: 15px;
     text-decoration: none;
-    margin: 30px;
+    margin: 26px;
 }
 
 .activity-card-pack{
     display: flex;
+    column-gap: 35px;
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 20px;
@@ -282,18 +303,30 @@ main{
 
 .activity-card{
     background-color: white;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 15px 0px;
     border-radius: 20px;
     box-shadow: 0 0 15px #0000003d;
     cursor: pointer;
     box-sizing: border-box;
 }
 
-.activity-card-imgimg{
+.double-activity{
+   display: flex;
+   row-gap: 30px;
+   flex-direction: column;
+}
+
+.activity-card-imgimg1{
+    width: 280px;
+    height: 435px;
     object-fit: cover;
-    width: 365px;
-    max-height: 240px;
-    border-radius: 16px 16px 0 0;
+    border-radius: 12px 12px 0px 0;
+}
+.activity-card-imgimg{
+    width: 240px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
 }
 
 .activity-card-title{
@@ -308,7 +341,7 @@ main{
 
 .footer{
     background-color: #F2F2F2;
-    width: 1700px;
+    width: 1440px;
     height: 200px;
 }
 
@@ -321,7 +354,7 @@ main{
 .footer-column-wrapper{
     display: flex;
     max-width: 100%;
-    width: 1500px;
+    width: 1300px;
     margin: auto;
     padding: 0 32px;
     box-sizing: border-box;
