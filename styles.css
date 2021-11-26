@@ -43,7 +43,7 @@ main{
 .nav{
     padding: 25px; 
     text-align: end; 
-    font-weight: 500px;
+    font-weight: 500;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
 }
@@ -156,6 +156,20 @@ main{
 .search-result-text{
     margin: 0px;
 }
+
+.search-filters-filter:hover {
+    background-color:#f2f2f2;
+    color: #0065fc;
+}
+
+.search-filters-filter-wrap-icon:hover{
+    background-color:#bfd4f3;
+}
+
+.search-filters-filter-wrap-iconicon:hover{
+    color: grey;
+    zoom: 150%;
+ }
 
 .hosting-wrapper, .hosting-popular, .hosting-main{
     background-color:#F2F2F2;
@@ -291,7 +305,7 @@ main{
     flex-wrap: wrap;
     column-gap: 15px;
     text-decoration: none;
-    margin: 26px;
+    margin: 20px;
 }
 
 .activity-card-pack{
