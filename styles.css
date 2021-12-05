@@ -41,12 +41,9 @@ main{
     padding: 0px 12px;
 }
 
-.nav{
-    padding: 25px; 
-    text-align: end; 
-    font-weight: 500;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
+nav{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -72,6 +69,9 @@ main{
     width: 224px;
     font-size: 16px;
     font-weight: bold
+}
+.search-bar-submit-icon{
+    display: none!important;
 }
 
 .search-bar-submit-input{
@@ -135,7 +135,7 @@ main{
 }
 
 .search-filters-filter-wrap-iconicon{
-    color:blue;
+    color:#0065fc;
 }
 
 .search-filters-filter-title{
@@ -174,13 +174,14 @@ main{
     color: #0065fc;
 }
 
-.search-filters-filter-wrap-icon:hover{
+.search-filters-filter:hover div{
     background-color:#bfd4f3;
 }
 
-.search-filters-filter-wrap-iconicon:hover{
+.search-filters-filter:hover i{
     color: grey;
-    zoom: 150%;
+    transform: scale(1.5) rotate(360deg);;
+    transition-duration: 1s;
  }
 
 .hosting-wrapper, .hosting-popular, .hosting-main{
@@ -253,11 +254,11 @@ main{
     margin: 0px 10px 5px 10px;
 }
 
-.hosting-main-card-star-icon[data-active=true]{
+.star-active{
     color:#0065FC;
 }
 
-.hosting-main-card-star-icon[data-active=false]{
+.star-inactive{
     color: #C9C9C9;
 }
 
@@ -396,55 +397,54 @@ main{
     color: black;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 .head{
     flex-direction: column;
-    margin-bottom: 50px;
-}
 }
 
-@media screen and (max-width: 768px){
 .header-nav-link{
     padding: 50px;
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
+    width: 50%;
     margin-bottom: 26px;
     text-align: center;
 }
+
+.header-nav-link:hover[data-active=true]{
+    border-bottom-color: #0065FC;
+    color:#0065FC
 }
 
+.header-nav-link:hover[data-active=false]{
+    border-bottom-color: #0065FC;
+    color:#0065FC
+}
 
-@media screen and (max-width: 768px){
-.search-filters {
+.search-filters{
     flex-direction: column;
     margin-top: 32px;
     flex-wrap: wrap;
 }
-}
 
-@media screen and (max-width: 768px) {
 .fa-search{
     display: none;
 }
-}
 
-@media screen and (max-width: 768px){
 .activity-card-imgimg1 {
     width: 327px;
     height: 185px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0;
 }
-}
 
-@media screen and (max-width: 768px){
 .activity-card-imgimg {
     width: 327px;
     height: 185px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0;
 }
-}
 
-@media screen and (max-width: 768px){
 .hosting-main {
     display: flex;
     order: 2;
@@ -452,9 +452,7 @@ main{
     flex-wrap: wrap;
     background-color: white;
 }
-}
 
-@media screen and (max-width: 768px){
 .hosting-main-card-figure-img {
     height: 110px;
     object-fit: cover;
@@ -462,14 +460,19 @@ main{
     max-height: 100%;
     border-radius: 16px 16px 0 0;
 }
-}
 
-@media screen and (max-width : 768px){
 .footer-column-wrapper {
     width: 440px;
     display: flex;
     flex-direction: column;
     margin: 15px;
+}
 
+.search-bar-submit-icon{
+    display: inline-block!important;
+}
+
+.search-bar-submit-input-text{
+    display: none;
 }
 }
