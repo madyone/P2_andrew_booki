@@ -23,8 +23,8 @@ header{
 
 h1{
     color:#0065fc ;
-    font-family: 'Rancho', cursive;
     font-size: 75px;
+    font-family: 'Rancho', cursive;
     margin: 0 0 0 10px;
 }
 
@@ -409,6 +409,12 @@ footer{
         flex-flow: row wrap;
         align-items: center;
         flex-direction: column;
+    }
+    
+    nav{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
     }
     
     .head{
