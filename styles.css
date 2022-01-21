@@ -1,6 +1,5 @@
 body{
     font-family : 'Raleway', sans-serif;
-    padding: 0px 32px;
 }
 
 a{
@@ -22,12 +21,19 @@ header{
     flex-flow: row wrap;
 }
 
-h1, h2 {
-    font-size: 30px;
-    font-weight: 600;  
+h1{
+    color:#0065fc ;
+    font-family: 'Rancho', cursive;
+    font-size: 75px;
+    margin: 0 0 0 10px;
 }
 
-h3, a{
+h2, h3 {
+    font-size: 25px;
+    font-weight: 600px;  
+}
+
+h4, a{
     color: black;
 }
 
@@ -98,8 +104,9 @@ nav{
     cursor: pointer;
 }
 
-.search-filters{
+.search-filters {
     display: flex;
+    column-gap: 10px;
     margin-top: 32px;
     flex-wrap: wrap;
 }
@@ -116,7 +123,7 @@ nav{
     margin-right: 32px;
     border: 2px solid #d9d9d9;
     border-radius: 32px;
-    margin-bottom: 16px;
+    margin-bottom: 37px;
     cursor: pointer;
     transition-duration: 0.1s;
     font-weight: bold;
@@ -189,7 +196,7 @@ nav{
 .hosting-wrapper, .hosting-popular{
     background-color:#F2F2F2;
     border-radius: 25px;
-    padding: 32px;
+    padding: 10px;
     Flex: 1 1 50px
 }
 
@@ -220,7 +227,7 @@ nav{
     box-sizing: border-box;
     display: inline-block;
     background-color: #fff;
-    flex: 0 0 200px;
+    flex: 1 0 200px;
     margin: 1%;
     padding: 7px;
     border-radius: 26px;
@@ -300,7 +307,7 @@ nav{
     position: relative;
     min-height: 100%;
     width: 33%;
-    min-width: 100px;
+    min-width: 150px;
 }
 
 .hosting-popular-card-figure-img{
@@ -395,9 +402,13 @@ footer{
         padding: 0px 30px 0px 46px;
     }
 
-    header>img{
+
+    header {
+        display: flex;
         justify-content: space-between;
         flex-flow: row wrap;
+        align-items: center;
+        flex-direction: column;
     }
     
     .head{
